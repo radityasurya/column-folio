@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio",
+  "authors": [
+    "Raditya Surya Pratama <radityasurya@hotmail.com>"
+  ],
+  "description": "Easy setup for personal portfolio",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.radityasurya.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
