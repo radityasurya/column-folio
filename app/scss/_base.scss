@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: $base__font-size;
     background-color: $color__primary;
+    color: $color__neutral--dark;
 }
 
 a {

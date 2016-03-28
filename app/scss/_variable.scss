@@ -20,6 +20,8 @@ $text__colour--base     : $color__neutral--dark;
 $base__font-size        : 15 !default;
 $base__line             : 20 !default;
 
+$nav__item--size        : 80px;
+
 @function calc-rem($target) {
     @return ($target / $base_font-size) * 1 rem;
 }

@@ -1,0 +1,69 @@
+$panel__size--width: 340px;
+
+.panels {
+    height: 100vh;
+    height: 100%;
+    left: $nav__item--size;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    width: calc(100% - 80px);
+    padding: 20px 0 20px 20px;
+    white-space: nowrap;
+    
+    .panel {
+        height: 100%;
+        background-color: $color__secondary--dark;
+        width: $panel__size--width;
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0 20px 0 0;
+        white-space: normal;
+        position: relative;
+        
+        @include element('container') {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        @include element('header') {
+            background-color: $color__ternary--dark;
+            height: 40px;
+            position: relative;
+            box-sizing: border-box;
+
+            
+            @include element('title') {
+                margin: 0;
+                margin-left: 40px;
+                font-size: 1.3em;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                            display: inline-block;
+
+            }
+            
+            @include element('icon') {
+                background-color: $color__decorative--dark;
+                height: 100%;
+                position: absolute;
+                display: inline-block;
+                width: 40px;
+                img {
+                    margin-top: 7px;
+                    margin-left: 7px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+            }
+        }
+        @include element('content') {
+            
+        }
+    }
+}
