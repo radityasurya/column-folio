@@ -1,0 +1,56 @@
+$nav__item--size: 80px;
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 80px;
+    @include element('container') {
+        height: 100%;
+        height: 100vh;
+        position: relative;
+        width: $nav__item--size;
+        z-index: 2;
+        background-color: $color__secondary--dark;
+    }
+    @include element('list') {
+        list-style: none;
+        width: $nav__item--size;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        @include element('item') {
+            height: $nav__item--size;
+            background-color: $color__ternary--dark;
+            border-bottom: 1px solid #282828;
+            @include modifier('logo') {
+                background-color: $color__decorative--dark;        
+            }
+        }
+    }
+    @include element('link') {
+        height: $nav__item--size;
+        display: block;
+        width: 100%;
+        -webkit-transition: color .3s ease-in-out;
+        transition: color .3s ease-in-out;
+    }
+    
+    @include element('icon') {
+        height: 35px;
+        line-height: 35px;
+        top: 23px;
+        position: relative;
+        
+        @include modifier('logo') {
+            font-size: 40px;        
+        }
+        
+        @include element('img') {
+            height: 35px;
+        }
+        
+    }
+}

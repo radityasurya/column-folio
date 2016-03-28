@@ -1,0 +1,30 @@
+html {
+    font-size: $base__font-size;
+    background-color: $color__primary;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.app {
+    
+    @include linx($text__link--primary, $text__link--visited, $text__link--hover, 
+        $text__link--active);
+    
+    background-color: $color__primary;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    
+    @include modifier('dark') {
+        background-color: $color__primary--dark;
+    }
+
+}
+

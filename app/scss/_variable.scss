@@ -1,0 +1,25 @@
+/* VARIABLE */
+$color__primary         : #ffffff!default;
+$color__primary--dark   : #282828!default;
+$color__secondary--dark : #464646!default;
+$color__ternary--dark   : #666666!default;
+$color__neutral--dark   : #d8d8d8!default;
+
+$color__decorative--dark: #f56462!default;
+
+$text__link--primary    : #f3f3f3!default;
+$text__link--active     : #f3f3f3!default;
+$text__link--hover      : #ffffff!default;
+$text__link--visited    : #f3f3f3!default;
+
+$text__family           : 'Helvetica,Arial,Verdana,sans-serif';
+$text__size             : 30;
+$text__line             : 36;
+$text__colour--base     : $color__neutral--dark;
+    
+$base__font-size        : 15 !default;
+$base__line             : 20 !default;
+
+@function calc-rem($target) {
+    @return ($target / $base_font-size) * 1 rem;
+}
