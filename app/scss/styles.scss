@@ -1,6 +1,6 @@
-@import 'variable.scss';
+@import 'variable';
+@import 'mixins';
+@import 'reset/normalize';
 
-body {
-    background: $body;
-    color: $body-color;
-}
+@import 'base';
+@import 'nav';
