@@ -17,16 +17,13 @@
 }
 
 @mixin linx ($link, $visit, $hover, $active) {
-  a {
-    color: $link;
-    &:visited {
-      color: $visit;
+    a {
+        color: $link;
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
     }
-    &:hover {
-      color: $hover;   
-    }
-    &:active {
-      color: $active;
-    }
-  }
 }
