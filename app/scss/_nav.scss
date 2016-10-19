@@ -23,12 +23,19 @@
         margin: 0;
         @include element('item') {
             height: $nav__item--size;
-            background-color: $color__ternary--dark;
-            border-bottom: 1px solid #282828;
+            background-color: #fff;
+            &:hover {
+                -webkit-transition: color .3s ease-in-out;
+                transition: color .3s ease-in-out;
+                background-color: darken($color: #fff, $amount: 5);
+            }
+            border-bottom: 1px solid $color__decorative--dark;
             @include modifier('logo') {
                 background-color: $color__decorative--dark;
                 &:hover {
-                    background-color: lighten($color: $color__ternary--dark, $amount: 10);
+                    -webkit-transition: color .3s ease-in-out;
+                    transition: color .3s ease-in-out;
+                    background-color: darken($color: $color__ternary--dark, $amount: 5);
                 }
             }
         }

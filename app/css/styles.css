@@ -1053,12 +1053,18 @@ a.button {
     margin: 0; }
     .nav__list__item {
       height: 80px;
-      background-color: #f56462;
-      border-bottom: 1px solid #282828; }
+      background-color: #fff;
+      border-bottom: 1px solid #f56462; }
+      .nav__list__item:hover {
+        -webkit-transition: color .3s ease-in-out;
+        transition: color .3s ease-in-out;
+        background-color: #f2f2f2; }
       .nav__list__item--logo {
         background-color: #f56462; }
         .nav__list__item--logo:hover {
-          background-color: #f89392; }
+          -webkit-transition: color .3s ease-in-out;
+          transition: color .3s ease-in-out;
+          background-color: #f34c4a; }
   .nav__link {
     height: 80px;
     display: block;
