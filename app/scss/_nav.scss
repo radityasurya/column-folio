@@ -54,6 +54,8 @@
         position: relative;
         @include modifier('logo') {
             font-size: 40px;
+            font-style: italic;
+            font-weight: 700;
         }
         @include element('img') {
             height: 35px;

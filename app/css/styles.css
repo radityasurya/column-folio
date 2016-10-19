@@ -979,6 +979,31 @@ h6 {
   .clearfix:after {
     clear: both; }
 
+.nanobar {
+  width: calc(100% - 81px);
+  height: 4px;
+  z-index: 9999;
+  top: 0;
+  left: 81px; }
+
+.bar {
+  width: 0;
+  height: 100%;
+  transition: height .3s;
+  background: #f56462; }
+
+.fade {
+  transition: opacity 1s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+
+.fade.out {
+  opacity: 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -1077,7 +1102,9 @@ a.button {
     top: 23px;
     position: relative; }
     .nav__icon--logo {
-      font-size: 40px; }
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 700; }
     .nav__icon__img {
       height: 35px; }
 
@@ -1134,7 +1161,10 @@ a.button {
         margin-top: 40px;
         text-align: center;
         border-color: #fff;
-        color: #fff; }
+        color: #fff;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
         .panels .panel--intro__button:hover {
           color: #f56462;
           background-color: #fff;

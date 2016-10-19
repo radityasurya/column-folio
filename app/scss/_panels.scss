@@ -56,6 +56,9 @@ $panel__size--width: 340px;
                 text-align: center;
                 border-color: #fff;
                 color: #fff;
+                    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
                 &:hover {
                     color: $color__decorative--dark;
                     background-color: #fff;
