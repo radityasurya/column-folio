@@ -36,40 +36,40 @@
         <![endif]-->
 
     <div class="wrapper">
-        <div class="app app--dark">
+        <div class="app app--dark" style="padding-top: 20px;">
 
             <!-- NAVIGATION -->
             <div class="nav">
                 <div class="nav__container">
                     <div class="nav__list">
                         <div class="nav__list__item nav__list__item--logo">
-                            <a href="" class="nav__link ">
+                            <a href="#home" class="nav__link ">
                                 <span class="nav__icon nav__icon--logo">R</span>
                             </a>
                         </div>
                         <div class="nav__list__item">
-                            <a href="" class="nav__link tooltip" title="About Me">
+                            <a href="#about" class="nav__link tooltip" title="About Me">
                                 <span class="nav__icon">
                                     <img class=nav__icon__img src="images/people.png">
                                 </span>
                             </a>
                         </div>
                         <div class="nav__list__item">
-                            <a href="" class="nav__link tooltip" title="Portfolio">
+                            <a href="#portfolio" class="nav__link tooltip" title="Portfolio">
                                 <span class="nav__icon">
                                     <img class=nav__icon__img src="images/resume.png">
                                 </span>
                             </a>
                         </div>
                         <div class="nav__list__item">
-                            <a href="" class="nav__link tooltip" title="Skills">
+                            <a href="#skills" class="nav__link tooltip" title="Skills">
                                 <span class="nav__icon">
                                     <img class=nav__icon__img src="images/flash-symbol.png">
                                 </span>
                             </a>
                         </div>
                         <div class="nav__list__item">
-                            <a href="" class="nav__link tooltip" title="Contact Me">
+                            <a href="#contact" class="nav__link tooltip" title="Contact Me">
                                 <span class="nav__icon">
                                     <img class=nav__icon__img src="images/mail.png">
                                 </span>
@@ -81,24 +81,28 @@
 
             <!-- PANELS -->
             <div class="panels fade out">
-                <section class="panel panel--intro">
+                <section id="home" class="panel panel--intro">
                     <div class="panel--intro__container">
+                        <span class="panel--intro__text">Hi!</span>
+                        <span class="panel--intro__text">My name is</span>
                         <span class="panel--intro__text">Raditya</span>
                         <span class="panel--intro__text">Surya</span>
                         <span class="panel--intro__text">Pratama</span>
-                        <button class="button button-outline panel--intro__button">More →</button>
+                        <span class="panel--intro__text">I'm a</span>
+                        <span class="panel--intro__text">Front-End Engineer</span>
+                        <button href="#about" class="button button-outline panel--intro__button">More →</button>
                     </div>
 
                 </section>
-                <section class="panel">
+                <section id="about" class="panel">
                     <div class="panel__container">
                         <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
+                            <!--<span class="panel__header__icon">
+                                <img src="images/people.png" alt="">
+                            </span>-->
+                            <div class="panel__header__title">
+                                <h2>About</h2>
+                            </div>
 
                         </header>
                         <div class="panel__content">
@@ -107,15 +111,15 @@
                     </div>
                 </section>
 
-                <!--<section class="panel">
+                <section id="portfolio" class="panel">
                     <div class="panel__container">
                         <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
+                            <!--<span class="panel__header__icon">
+                                <img src="images/people.png" alt="">
+                            </span>-->
+                            <div class="panel__header__title">
+                                <h2>portfolio</h2>
+                            </div>
 
                         </header>
                         <div class="panel__content">
@@ -123,15 +127,16 @@
                         </div>
                     </div>
                 </section>
-                <section class="panel">
+
+                <section id="skills" class="panel">
                     <div class="panel__container">
                         <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
+                            <!--<span class="panel__header__icon">
+                                <img src="images/people.png" alt="">
+                            </span>-->
+                            <div class="panel__header__title">
+                                <h2>skill</h2>
+                            </div>
 
                         </header>
                         <div class="panel__content">
@@ -139,15 +144,16 @@
                         </div>
                     </div>
                 </section>
-                <section class="panel">
+
+                <section id="contact" class="panel">
                     <div class="panel__container">
                         <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
+                            <!--<span class="panel__header__icon">
+                                <img src="images/people.png" alt="">
+                            </span>-->
+                            <div class="panel__header__title">
+                                <h2>skill</h2>
+                            </div>
 
                         </header>
                         <div class="panel__content">
@@ -155,38 +161,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="panel">
-                    <div class="panel__container">
-                        <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
 
-                        </header>
-                        <div class="panel__content">
-                            content
-                        </div>
-                    </div>
-                </section>
-                <section class="panel">
-                    <div class="panel__container">
-                        <header class="panel__header">
-                            <span class="panel__header__icon">
-                                <img src="images/about.svg" alt="">
-                            </span>
-                            <span class="panel__header__title">
-                                About Me
-                            </span>
-
-                        </header>
-                        <div class="panel__content">
-                            content
-                        </div>
-                    </div>
-                </section>-->
             </div>
         </div>
     </div>
@@ -196,6 +171,7 @@
     <!-- inject:js -->
     <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="js/vendor/jquery.mousewheel.min.js"></script>
+    <script src="js/vendor/jquery.scrollTo.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/nanobar.min.js"></script>
     <script src="js/vendor/tooltipster.bundle.min.js"></script>

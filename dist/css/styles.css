@@ -1116,11 +1116,11 @@ a.button {
   overflow-y: hidden;
   position: absolute;
   width: calc(100% - 80px);
-  padding: 20px 0 20px 20px;
+  padding: 0 0 20px 20px;
   white-space: nowrap; }
   .panels .panel {
     height: 100%;
-    width: 340px;
+    width: 540px;
     display: inline-block;
     font-size: 1rem;
     border-radius: 2px;
@@ -1180,34 +1180,35 @@ a.button {
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
     .panels .panel__header {
-      background-color: #f56462;
-      height: 40px;
+      height: 60px;
       cursor: default;
       position: relative;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      background-color: #fff;
+      border-bottom: 1px solid #dcdcdc; }
       .panels .panel__header__title {
-        margin: 0;
-        margin-left: 43px;
-        font-size: 1.5rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        display: inline-block;
-        color: #fff;
-        margin-top: 8px;
         font-weight: 500;
-        text-transform: uppercase; }
+        font-size: 13px;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: #555;
+        overflow: hidden;
+        white-space: nowrap;
+        word-wrap: normal;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis; }
       .panels .panel__header__icon {
-        background-color: #f56462;
         height: 100%;
         position: absolute;
         display: inline-block;
-        width: 40px; }
+        width: 60px; }
         .panels .panel__header__icon img {
-          margin-top: 7px;
-          margin-left: 10px;
-          height: 25px;
+          margin-top: 15px;
+          margin-left: 17px;
+          height: 30px;
           display: flex;
           justify-content: center;
           align-content: center; }
+      .panels .panel__header:hover {
+        background-color: #fbfbfb;
+        border-bottom: 1px solid #dcdcdc; }
